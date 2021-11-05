@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="PlabPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>DTO.Administrador</class>
+    <class>DTO.Actividad</class>
+    <class>DTO.Docencia</class>
+    <class>DTO.Profesor</class>
+    <class>DTO.ActividadProfesor</class>
+    <class>DTO.Usuario</class>
+    <class>DTO.Otras</class>
+    <class>DTO.Administracion</class>
+    <class>DTO.TipoUsuario</class>
+    <class>DTO.Investigacion</class>
+    <class>DTO.Extension</class>
+    <class>DTO.Recovery</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/plab_awp?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="admin1234"/>
+      <!--<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/admin_awp?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="admin_plab"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="og8lzliuApMN4TE8"/>-->
+<!--      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://ingsistemasufps.co:3306/plabp_awp?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="plabp_admin"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="4ctiv1dad3sdoc3ntes"/>-->
+      
+    </properties>
+  </persistence-unit>
+</persistence>
